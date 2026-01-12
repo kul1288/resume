@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldeep Singh - Resume</title>
+    <style>
+        :root {
+            --primary: #004a99;
+            --text: #333;
+            --grey: #555;
+            --light-bg: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.4;
+            color: var(--text);
+            background-color: #d1d5db;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: left;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: var(--grey);
+            margin-top: 8px;
+        }
+
+        .cert-mini {
+            display: inline-flex;
+            align-items: center;
+            background: #fff4e5;
+            border: 1px solid #ff9900;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 3px;
+            color: var(--primary);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .item-group {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 14.5px;
+        }
+
+        .sub-text {
+            color: var(--primary);
+            font-size: 13.5px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 13px;
+            margin-bottom: 3px;
+            color: #444;
+        }
+
+        .tech-stack {
+            font-size: 12px;
+            background: var(--light-bg);
+            padding: 4px 8px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 5px;
+            color: var(--grey);
+            border: 1px solid #eee;
+        }
+
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media print {
+            .download-btn {
+                display: none;
+            }
+
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="download-btn" onclick="window.print()">Download Resume</button>
+
+    <div class="resume-container">
+        <header>
+            <h1>KULDEEP SINGH</h1>
+            <div style="font-weight: bold; color: var(--grey); margin-top: 4px;">MERN/Full Stack Developer</div>
+            <div class="contact-info">
+                📍 Gorakhpur, UP, India | 📞 +91 9599555121 | ✉️ kuldeepsingh.singh77@gmail.com<br>
+                🔗 <a href="https://www.linkedin.com/in/kuldeepsinghprogrammer"
+                    style="text-decoration: none; color: var(--primary);">linkedin.com/in/kuldeepsinghprogrammer</a>
+            </div>
+            <div class="cert-mini">
+                <span style="margin-right: 8px;">☁️</span> AWS Certified Solution Architect
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span>Lead Experience Engineer</span>
+                    <span>Nov 2023 - Present</span>
+                </div>
+                <div class="sub-text">Publicis Sapient</div>
+                <ul>
+                    <li>Achieved 40% reduction in loan eligibility decision time via PST microservice[cite: 13].</li>
+                    <li>Spearheaded Kafka integration for Card Auto Fulfillment, boosting throughput by 40%[cite: 14].
+                    </li>
+                    <li>Engineered lending Document Management microservice integrated with FileNet and Adobe
+                        eSign[cite: 15].</li>
+                </ul>
+            </div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span>Project Leader</span>
+                    <span>July 2022 - Nov 2023</span>
+                </div>
+                <div class="sub-text">R Systems International ltd (Jeeves)</div>
+                <ul>
+                    <li>Optimized scalability and performance utilizing AWS serverless and Lambda functions[cite: 20].
+                    </li>
+                    <li>Reduced bug counts by 30% through automated testing and code quality tools[cite: 21].</li>
+                    <li>Improved product delivery speed by 33% via Agile/Scrum methodologies[cite: 22].</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Projects</h2>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span>Lloyds Bank</span>
+                    <span>Nov 2023 - Apr 2025</span>
+                </div>
+                <ul>
+                    <li>Architected event-driven lending platform handling real-time product eligibility and
+                        pricing[cite: 49, 50].</li>
+                    <li>Integrated enterprise systems (nCino, FileNet, ACBS) for end-to-end lending automation[cite:
+                        51].</li>
+                </ul>
+                <div class="tech-stack"><strong>Tech:</strong> Typescript, Mssql, Node js, Kafka, Azure, React js,
+                    Docker [cite: 52]</div>
+            </div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span>Babson Diagnostics</span>
+                    <span>July 2022 - Sept 2023</span>
+                </div>
+                <ul>
+                    <li>Designed scalable platform for blood test booking with real-time process updates[cite: 56].</li>
+                    <li>Integrated secure payment gateways and OAuth for user authentication[cite: 57].</li>
+                </ul>
+                <div class="tech-stack"><strong>Tech:</strong> Typescript, Postgres, Serverless, AWS, Lambda, CI/CD,
+                    Jenkins [cite: 58]</div>
+            </div>
+
+            <div class="item-group">
+                <div class="item-header">
+                    <span>RevFin</span>
+                    <span>Sept 2018 - Oct 2020</span>
+                </div>
+                <ul>
+                    <li>Developed financial application for e-vehicle financing and loan access[cite: 69].</li>
+                    <li>Mentored junior engineers, improving team productivity and code quality by 40%[cite: 70].</li>
+                </ul>
+                <div class="tech-stack"><strong>Tech:</strong> React Js, MongoDB, Node js, AWS EC2, AWS Recognition
+                    [cite: 71]</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div style="font-size: 13px;">
+                <strong>Languages/Frameworks:</strong> Node js, Typescript, Express Js, React Js, Mongo DB, Mysql,
+                Postgresql, PHP.<br>
+                <strong>Cloud/Infrastructure:</strong> AWS (Lambda, SQS), Microservices, Serverless, Kafka, Redis,
+                Docker, Jenkins, Azure DevOps.
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item-header">
+                <span>MCA</span>
+                <span>2009 - 2012</span>
+            </div>
+            <div class="sub-text">IMR Ghaziabad, Gautam Buddh Technical University [cite: 73, 74]</div>
+        </section>
+    </div>
+
+</body>
+
+</html>
