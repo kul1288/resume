@@ -134,12 +134,82 @@
             body {
                 background: white;
                 padding: 0;
+                margin: 0;
             }
 
             .resume-container {
                 box-shadow: none;
                 max-width: 100%;
-                padding: 0;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+            h2 {
+                font-size: 14px;
+                margin-top: 12px;
+                margin-bottom: 8px;
+                padding-bottom: 2px;
+            }
+
+            .item-group {
+                margin-bottom: 10px;
+            }
+
+            .item-header {
+                font-size: 13px;
+                margin-bottom: 2px;
+            }
+
+            .sub-text {
+                font-size: 12px;
+                margin-bottom: 2px;
+            }
+
+            ul {
+                margin: 2px 0;
+                padding-left: 18px;
+            }
+
+            li {
+                font-size: 11.5px;
+                margin-bottom: 2px;
+            }
+
+            .tech-stack {
+                font-size: 11px;
+                margin-top: 3px;
+            }
+
+            .contact-info {
+                font-size: 12px;
+                margin-top: 4px;
+            }
+
+            .cert-mini {
+                font-size: 12px;
+                padding: 4px 10px;
+                margin-top: 5px;
+            }
+
+            header {
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+
+            section {
+                margin-bottom: 10px;
+            }
+
+            div[style*="font-size: 13px"] {
+                font-size: 11.5px !important;
+            }
+
+            div[style*="font-size: 12px; color: var(--grey)"] {
+                font-size: 11px !important;
             }
         }
     </style>
@@ -154,14 +224,24 @@
             <h1>KULDEEP SINGH</h1>
             <div style="font-weight: bold; color: var(--grey); margin-top: 4px;">MERN/Full Stack Developer</div>
             <div class="contact-info">
-                📍 Gorakhpur, UP, India | 📞 +91 9599555121 | ✉️ kuldeepsingh.singh77@gmail.com<br>
+                📍 Noida, UP, India | 📞 +91 9599555121 | ✉️ kuldeepsingh.singh77@gmail.com<br>
                 🔗 <a href="https://www.linkedin.com/in/kuldeepsinghprogrammer"
-                    style="text-decoration: none; color: var(--primary);">linkedin.com/in/kuldeepsinghprogrammer</a>
+                    style="text-decoration: none; color: var(--primary);"
+                    target="_blank">linkedin.com/in/kuldeepsinghprogrammer</a>
             </div>
             <div class="cert-mini">
                 <span style="margin-right: 8px;">☁️</span> AWS Certified Solution Architect
             </div>
         </header>
+        <section>
+            <h2>Technical Skills</h2>
+            <div style="font-size: 13px;">
+                <strong>Languages/Frameworks:</strong> Node js, Typescript, Express Js, React Js, Mongo DB, Mysql,
+                Postgresql, PHP.<br>
+                <strong>Cloud/Infrastructure:</strong> AWS (Lambda, SQS), Microservices, Serverless, Kafka, Redis,
+                Docker, Jenkins, CI/CD, Docker, Github, Bitbucket, JIRA, Azure devops, Travis, SOLID design principle
+            </div>
+        </section>
 
         <section>
             <h2>Professional Experience</h2>
@@ -173,11 +253,17 @@
                 </div>
                 <div class="sub-text">Publicis Sapient</div>
                 <ul>
-                    <li>Achieved 40% reduction in loan eligibility decision time via PST microservice[cite: 13].</li>
-                    <li>Spearheaded Kafka integration for Card Auto Fulfillment, boosting throughput by 40%[cite: 14].
+                    <li>Accomplished a 40% reduction in loan eligibility decision time by implementing the Product
+                        Selector Tool (PST) microservice in Node.js/TypeScript, which improved the efficiency of
+                        customer onboarding.</li>
+                    <li>Spearheaded Kafka integration for asynchronous communication in the Card Auto Fulfillment
+                        Microservice, boosting transaction and reducing end-to-end processing time..
                     </li>
-                    <li>Engineered lending Document Management microservice integrated with FileNet and Adobe
-                        eSign[cite: 15].</li>
+                    <li>Engineered a lending Document Management microservice integrated with Thunderhead (for document
+                        generation), FileNet (for storage), and Adobe eSign (for electronic signature), which automated
+                        the lending document lifecycle and led to a 50% reduction in processing time.</li>
+                    <li>Delivered widely used customer-facing features in the General Insurance domain, enabling
+                        customers to access and amend policies without reliance on internet banking.</li>
                 </ul>
             </div>
 
@@ -186,13 +272,76 @@
                     <span>Project Leader</span>
                     <span>July 2022 - Nov 2023</span>
                 </div>
-                <div class="sub-text">R Systems International ltd (Jeeves)</div>
+                <div class="sub-text">R Systems International ltd </div>
                 <ul>
-                    <li>Optimized scalability and performance utilizing AWS serverless and Lambda functions[cite: 20].
+                    <li>Optimized scalability, reduced operational overhead, and enhanced application performance by
+                        utilizing Lambda functions and other cloud-native services in AWS serverless architecture.
                     </li>
-                    <li>Reduced bug counts by 30% through automated testing and code quality tools[cite: 21].</li>
-                    <li>Improved product delivery speed by 33% via Agile/Scrum methodologies[cite: 22].</li>
+                    <li>Led efforts to implement code quality tools and automated testing, reducing bug counts by 30%
+                        and accelerating development cycles.</li>
+                    <li>Actively participated in Agile/Scrum methodologies, conducting sprint planning, daily stand-ups,
+                        and retrospectives to drive project success</li>
                 </ul>
+            </div>
+            <div class="item-group">
+                <div class="item-header">
+                    <span>Software Engineer</span>
+                    <span>January 2022 - June 2022</span>
+                </div>
+                <div class="sub-text">Jeeves </div>
+                <ul>
+                    <li>Developed user-centric feature ie. loans resulting in 65% increase in user engagement
+                    </li>
+                    <li>Collaborated with cross-functional teams to design and implement new features, reducing
+                        development time and improving user experience.</li>
+                    <li>Optimized database query reducing application time by 73% and enhanced user satisfaction.</li>
+                </ul>
+            </div>
+            <div class="item-group">
+                <div class="item-header">
+                    <span>Senior Consultant</span>
+                    <span>November 2020 - January 2022</span>
+                </div>
+                <div class="sub-text">Infogain </div>
+                <ul>
+                    <li>Implemented microservices that can communicate with other microservices and execute various
+                        functions.</li>
+                    <li>Implemented back-end bindings and developed RESTFul APIs for multiple services.</li>
+                    <li>Reduced software bugs by 80% through code review and testing, enhancing product reliability.
+                    </li>
+                </ul>
+            </div>
+            <div class="item-group">
+                <div class="item-header">
+                    <span>Lead Software Developer</span>
+                    <span>September 2018 - October 2022</span>
+                </div>
+                <div class="sub-text">Revfin Services pvt ltd </div>
+                <ul>
+                    <li>Developed and Architected and multiple high-traffic fintech platforms, resulting in a 25%
+                        increase in annual revenue and providing seamless experiences to millions of users.</li>
+                    <li>Led a team of 5 engineers in design and development software, resulting in 55% increase in team
+                        efficiency rate.</li>
+                    <li>Designed and built RESTful APIs and WebSocket communication channels for real-time features,
+                        enhancing user engagement and interactivity.</li>
+                    <li>Implemented efficient database structures and optimized queries, resulting in improved
+                        application performance.</li>
+                    <li>Transformed UIs using React, decrease debugging time by 62% and increase view by 31%.</li>
+                </ul>
+            </div>
+            <div class="item-group">
+                <div class="item-header">
+                    <span>MEAN stack developer </span>
+                    <span>September 2016 - August 2018</span>
+                </div>
+                <div class="sub-text">Equal Infotech</div>
+            </div>
+            <div class="item-group">
+                <div class="item-header">
+                    <span>Software Developer</span>
+                    <span>May 2013 - August 2016</span>
+                </div>
+                <div class="sub-text">JRD Software pvt ltd</div>
             </div>
         </section>
 
@@ -201,63 +350,96 @@
 
             <div class="item-group">
                 <div class="item-header">
-                    <span>Lloyds Bank</span>
-                    <span>Nov 2023 - Apr 2025</span>
+                    <span><a href="https://www.lloydsbank.com/" target="_blank"
+                            style="text-decoration: underline; color: var(--primary);">Lloyds Bank</a></span>
+                    <span>Nov 2023 - Dec 2026</span>
                 </div>
+                <div style="font-size: 12px; color: var(--grey); margin-bottom: 5px;">🔗 <a
+                        href="https://www.lloydsbank.com/" target="_blank"
+                        style="text-decoration: none; color: var(--primary);">https://www.lloydsbank.com/</a></div>
                 <ul>
-                    <li>Architected event-driven lending platform handling real-time product eligibility and
-                        pricing[cite: 49, 50].</li>
-                    <li>Integrated enterprise systems (nCino, FileNet, ACBS) for end-to-end lending automation[cite:
-                        51].</li>
+                    <li>Architected and managed a large-scale, event-driven lending platform for Lloyds Bank comprising
+                        over a dozen Node.js/TypeScript microservices on Azure; the system handles real-time product
+                        eligibility (loans, overdrafts, cards), pricing, documentation, and fulfilment workflows across
+                        the bank’s loan portfolio.</li>
+                    <li>Integrated multiple enterprise systems (nCino for loan origination, Thunderhead for document
+                        generation, FileNet for document storage, ACBS core banking, and EPC+ pricing engine) to fully
+                        automate end-to-end lending workflows and ensure data consistency across the platform.</li>
                 </ul>
                 <div class="tech-stack"><strong>Tech:</strong> Typescript, Mssql, Node js, Kafka, Azure, React js,
-                    Docker [cite: 52]</div>
+                    Docker</div>
             </div>
 
             <div class="item-group">
                 <div class="item-header">
-                    <span>Babson Diagnostics</span>
+                    <span><a href="https://www.babsondx.com/" target="_blank"
+                            style="text-decoration: underline; color: var(--primary);">Babson Diagnostics</a></span>
                     <span>July 2022 - Sept 2023</span>
                 </div>
+                <div style="font-size: 12px; color: var(--grey); margin-bottom: 5px;">🔗 <a
+                        href="https://www.babsondx.com/" target="_blank"
+                        style="text-decoration: none; color: var(--primary);">https://www.babsondx.com/</a></div>
                 <ul>
-                    <li>Designed scalable platform for blood test booking with real-time process updates[cite: 56].</li>
-                    <li>Integrated secure payment gateways and OAuth for user authentication[cite: 57].</li>
+                    <li>Designed and developed a highly scalable platform that allows customers to easily book blood
+                        tests online and receive real-time updates at every step of the process.</li>
+                    <li>Integrate third-party payment gateways for secure transactions and integrated OAuth for user
+                        authentication.</li>
                 </ul>
                 <div class="tech-stack"><strong>Tech:</strong> Typescript, Postgres, Serverless, AWS, Lambda, CI/CD,
-                    Jenkins [cite: 58]</div>
+                    Jenkins</div>
             </div>
 
             <div class="item-group">
                 <div class="item-header">
-                    <span>RevFin</span>
-                    <span>Sept 2018 - Oct 2020</span>
+                    <span><a href="https://www.tryjeeves.com/" target="_blank"
+                            style="text-decoration: underline; color: var(--primary);">Jeeves</a></span>
+                    <span>Jan 2022 - Jun 2022</span>
                 </div>
+                <div style="font-size: 12px; color: var(--grey); margin-bottom: 5px;">🔗 <a
+                        href="https://www.tryjeeves.com/" target="_blank"
+                        style="text-decoration: none; color: var(--primary);">https://www.tryjeeves.com/</a></div>
                 <ul>
-                    <li>Developed financial application for e-vehicle financing and loan access[cite: 69].</li>
-                    <li>Mentored junior engineers, improving team productivity and code quality by 40%[cite: 70].</li>
+                    <li>Effectively managed bulk card statement generation, verification, and distribution to clients.
+                    </li>
+                    <li>Employed advanced compression techniques to efficiently convert large files into compact sizes
+                        for streamlined processing, resulting in a 60% reduction time in statement generation.</li>
                 </ul>
                 <div class="tech-stack"><strong>Tech:</strong> React Js, MongoDB, Node js, AWS EC2, AWS Recognition
-                    [cite: 71]</div>
+                </div>
+            </div>
+            <div class="item-group">
+                <div class="item-header">
+                    <span><a href="https://www.revfin.in/" target="_blank"
+                            style="text-decoration: underline; color: var(--primary);">RevFin</a></span>
+                    <span>Sept 2018 - Oct 2020</span>
+                </div>
+                <div style="font-size: 12px; color: var(--grey); margin-bottom: 5px;">🔗 <a
+                        href="https://www.revfin.in/" target="_blank"
+                        style="text-decoration: none; color: var(--primary);">https://www.revfin.in/</a></div>
+                <ul>
+                    <li>Played a pivotal role in a cutting-edge financial application, facilitating customer access to
+                        loans while championing eco-friendly transportation solutions through e-vehicle financing.
+                    </li>
+                    <li>Mentored and trained junior engineers, resulting in a 40% improvement in team productivity and
+                        code quality.</li>
+                </ul>
+                <div class="tech-stack"><strong>Tech:</strong> React Js, MongoDB, Node js, AWS EC2, AWS Recognition
+                </div>
             </div>
         </section>
-
-        <section>
-            <h2>Technical Skills</h2>
-            <div style="font-size: 13px;">
-                <strong>Languages/Frameworks:</strong> Node js, Typescript, Express Js, React Js, Mongo DB, Mysql,
-                Postgresql, PHP.<br>
-                <strong>Cloud/Infrastructure:</strong> AWS (Lambda, SQS), Microservices, Serverless, Kafka, Redis,
-                Docker, Jenkins, Azure DevOps.
-            </div>
-        </section>
-
         <section>
             <h2>Education</h2>
             <div class="item-header">
                 <span>MCA</span>
                 <span>2009 - 2012</span>
             </div>
-            <div class="sub-text">IMR Ghaziabad, Gautam Buddh Technical University [cite: 73, 74]</div>
+            <div class="sub-text">IMR Ghaziabad, Gautam Buddh Technical University</div>
+        </section>
+        <section>
+            <h2>Languages</h2>
+            <div class="item-header">
+                <span>English, Hindi</span>
+            </div>
         </section>
     </div>
 
